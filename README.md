@@ -49,18 +49,34 @@ Use Postman or any other API testing tool:
 
 **Create a New Guest Loyalty Reward:**
 
-- **Method:** `POST`
-- **URL:** `http://localhost:8000/api/guest-loyalty-rewards/`
-- **Headers:** `Content-Type: application/json`
-- **Body:**
-```json
-{
-    "name": "Test Reward",
-    "description": "Description of the test reward.",
-    "points_required": "22"
-}
+ - **Method:** `POST`
+ - **URL:** `http://localhost:8000/api/guest-loyalty-rewards/`
+ - **Headers:** `Content-Type: application/json`
+ - **Body:**
+ ```json
+ {
+     "name": "Test Reward",
+     "description": "Description of the test reward.",
+     "points_required": "22"
+ }
+ ```
 
 **Update an Existing Guest Loyalty Reward:**
-     Method: PUT or PATCH
-     URL: http://localhost:8000/api/guest-loyalty-rewards/{id}
-     Headers: Content-Type: application/json
+
+  -Method: `PUT or PATCH`
+  -URL: `http://localhost:8000/api/guest-loyalty-rewards/{id}`
+  -Headers: `Content-Type: application/json`
+ - **Body:**
+ ```json
+     {
+         "name": "Updated Reward Name",
+         "description": "Updated description."
+     }
+ ```
+
+ **Delete a Guest Loyalty Reward:**
+
+- **Method:** `GET`
+- **URL:** `http://localhost:8000/api/guest-loyalty-rewards/{id}`
+- **Headers:** (none required)
+- **Body:** (none)
