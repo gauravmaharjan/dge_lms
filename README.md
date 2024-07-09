@@ -52,7 +52,7 @@ Use Postman or any other API testing tool:
  - **Method:** `POST`
  - **URL:** `http://localhost:8000/api/guest-loyalty-rewards/`
  - **Headers:** `Content-Type: application/json`
- - **Body:**
+ - **Body:** (json raw)
  ```json
  {
      "name": "Test Reward",
@@ -63,15 +63,16 @@ Use Postman or any other API testing tool:
 
 **Update an Existing Guest Loyalty Reward:**
 
-  -**Method:** `PUT or PATCH`
-  -**URL:** `http://localhost:8000/api/guest-loyalty-rewards/{id}`
-  -**Headers:** `Content-Type: application/json`
- - **Body:**
+ - **Method:** `PUT or PATCH`
+ - **URL:** `http://localhost:8000/api/guest-loyalty-rewards/{id}`
+ - **Headers:** `Content-Type: application/json`
+ - **Body:** (json raw)
  ```json
-     {
-         "name": "Updated Reward Name",
-         "description": "Updated description."
-     }
+ {
+     "name": "Update Reward",
+     "description": "Update Descripton.",
+     "points_required": "18"
+ }
  ```
 
  **Delete a Guest Loyalty Reward:**
