@@ -63,9 +63,9 @@ Use Postman or any other API testing tool:
 
 **Update an Existing Guest Loyalty Reward:**
 
-  -Method: `PUT or PATCH`
-  -URL: `http://localhost:8000/api/guest-loyalty-rewards/{id}`
-  -Headers: `Content-Type: application/json`
+  -**Method:** `PUT or PATCH`
+  -**URL:** `http://localhost:8000/api/guest-loyalty-rewards/{id}`
+  -**Headers:** `Content-Type: application/json`
  - **Body:**
  ```json
      {
