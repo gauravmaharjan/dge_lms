@@ -34,11 +34,11 @@ Ensure .env file has: APP_ENV = dev
 Use Postman or any other API testing tool: 
 
   **GET All Guest Loyalty Rewards:**
-     Method: GET
-     URL: http://localhost:8000/api/guest-loyalty-rewards/
-     Headers: (none required)
-     Body: (none)
-     GET a Specific Guest Loyalty Reward:
+    - Method: GET
+    - URL: http://localhost:8000/api/guest-loyalty-rewards/
+    - Headers: (none required)
+     -Body: (none)
+    - GET a Specific Guest Loyalty Reward:
      
   **GET a Specific Guest Loyalty Reward:**  
      Method: GET
