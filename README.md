@@ -33,46 +33,29 @@ Ensure .env file has: APP_ENV = dev
 
 Use Postman or any other API testing tool: 
 
-  **GET All Guest Loyalty Rewards:**
-    - Method: GET
-    - URL: http://localhost:8000/api/guest-loyalty-rewards/
-    - Headers: (none required)
-     -Body: (none)
-    - GET a Specific Guest Loyalty Reward:
-     
-  **GET a Specific Guest Loyalty Reward:**  
-     Method: GET
-     URL: http://localhost:8000/api/guest-loyalty-rewards/{id}
-     Headers: (none required)
-     Body: (none)
-     Create a New Guest Loyalty Reward:
+**GET All Guest Loyalty Rewards:**
 
-  **Create a New Guest Loyalty Reward:**   
-     Method: POST
-     URL: http://localhost:8000/api/guest-loyalty-rewards/
-     Headers: Content-Type: application/json
-     Body:
-     json (raw)
-     {
-         "name": "Test Reward",
-         "description": "Description of the test reward."
-         "points_required": "22" 
-     }
+- **Method:** `GET`
+- **URL:** `http://localhost:8000/api/guest-loyalty-rewards/`
+- **Headers:** (none required)
+- **Body:** (none)
 
-   **Update an Existing Guest Loyalty Reward:**
-     Method: PUT or PATCH
-     URL: http://localhost:8000/api/guest-loyalty-rewards/{id}
-     Headers: Content-Type: application/json
-     Body:
-     json (raw)
-     {
-         "name": "Updated Reward Name",
-         "description": "Updated description."
-     }
+**GET a Specific Guest Loyalty Reward:**
 
-   **Delete a Guest Loyalty Reward:**
-     Method: DELETE
-     URL: http://localhost:8000/api/guest-loyalty-rewards/{id}
-     Headers: (none required)
-     Body: (none)
-      
+- **Method:** `GET`
+- **URL:** `http://localhost:8000/api/guest-loyalty-rewards/{id}`
+- **Headers:** (none required)
+- **Body:** (none)
+
+**Create a New Guest Loyalty Reward:**
+
+- **Method:** `POST`
+- **URL:** `http://localhost:8000/api/guest-loyalty-rewards/`
+- **Headers:**
+- **Body:**
+```json
+{
+    "name": "Test Reward",
+    "description": "Description of the test reward.",
+    "points_required": "22"
+}
